@@ -10,10 +10,11 @@ function square()
       data: {value:$("#value").val(),
              },
       success: function (res) { 
-                  $("p").append(res);
+	              $("p").html("<br>");
+                  $("p").append(res); 
                  
-  
-       } 
+                  
+       }  
     });
 }
 
@@ -24,8 +25,9 @@ function cube()
       data: {value:$("#value").val(),
              }, 
       success: function (res) {
-                  $("p").append(res);
-             
+				  
+	              $("p").html("<br>");
+                  $("p").append(res); 
 
        } 
     });
